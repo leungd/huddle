@@ -1,6 +1,6 @@
 class Profile < ActiveRecord::Base
 
-	belongs_to :use
-	has_many :posts
+	belongs_to :user
+	has_many :posts, dependent: :destroy
 
 end
