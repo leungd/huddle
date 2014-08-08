@@ -1,7 +1,7 @@
 class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
-    	t.reference :profile
+    	t.references :profile
       t.string :title
       t.string :body
 
